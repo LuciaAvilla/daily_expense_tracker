@@ -1,4 +1,5 @@
 print("Welcome to the Daily Expense Tracker!")
+
 menu = """
 Menu:
 1. Add a new expense
