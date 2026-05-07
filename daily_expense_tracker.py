@@ -9,6 +9,8 @@ Menu:
 5. Exit
 """
 
+expenses = []
+
 while True:
     print(menu)
     option = input("Choose an option: ")
@@ -16,3 +18,8 @@ while True:
     if option == "5":
         print("Exiting the Daily Expense Tracker. Goodbye!")
         break
+
+    elif option == "1":
+        value = float(input("Enter the expense amount: "))
+        expenses.append(value)
+        print("Expense added successfully!")
