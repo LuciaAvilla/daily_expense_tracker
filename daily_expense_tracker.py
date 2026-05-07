@@ -9,5 +9,10 @@ Menu:
 5. Exit
 """
 
-print(menu)
-opcao = input("Choose an option: ")
+while True:
+    print(menu)
+    option = input("Choose an option: ")
+
+    if option == "5":
+        print("Exiting the Daily Expense Tracker. Goodbye!")
+        break
