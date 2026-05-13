@@ -23,3 +23,30 @@ while True:
         value = float(input("Enter the expense amount: "))
         expenses.append(value)
         print("Expense added successfully!")
+
+    elif option == "2":
+        if not expenses:
+            print("No expenses recorded yet.")
+        else:
+            print("Your expenses:")
+            for i, valor in enumerate(expenses, 1):
+                print(f"{i}.{valor}")
+        input("\nPress Enter to return to menu...")
+
+    elif option == "3":
+        if not expenses:
+            print("No expenses recorded yet.")
+        else:
+            total = sum(expenses)
+            average = total/len(expenses)
+            print(f"Total expense: {total}")
+            print(f"Average expense: {average}")
+        input("\nPress Enter to return to menu...")
+
+    elif option == "4":
+        expenses.clear()
+        print("All expenses cleared.")
+        input("\nPress Enter to return to menu...")
+
+    else:
+        print("Invalid choice. Please try again.")
